@@ -1,3 +1,5 @@
+import jdk.incubator.vector.VectorOperators;
+
 import java.util.Scanner;
 
 public class App {
@@ -5,7 +7,7 @@ public class App {
     public static void main(String[] args) {
         char operator;
         double number1, number2;
-
+        System.out.println("hej hej");
         Scanner input = new Scanner(System.in);
 
         System.out.println("Choose an operator: +, -, *, or /");
@@ -25,5 +27,11 @@ public class App {
             default -> System.out.println("Invalid operator!");
         }
         input.close();
+
+        Hej();
+    }
+
+    public static void Hej(){
+        System.out.println("askdjasiöbd");
     }
 }
