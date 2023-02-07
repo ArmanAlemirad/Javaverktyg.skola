@@ -1,13 +1,17 @@
-import jdk.incubator.vector.VectorOperators;
+import com.sun.tools.javac.Main;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.Scanner;
 
 public class App {
+    static final Logger logger =LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
+        logger.info("Main method");
+
         char operator;
         double number1, number2;
-        System.out.println("hej hej");
         Scanner input = new Scanner(System.in);
 
         System.out.println("Choose an operator: +, -, *, or /");
@@ -27,11 +31,7 @@ public class App {
             default -> System.out.println("Invalid operator!");
         }
         input.close();
-
-        Hej();
     }
 
-    public static void Hej(){
-        System.out.println("askdjasiöbd");
-    }
+
 }
